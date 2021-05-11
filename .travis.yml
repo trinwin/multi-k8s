@@ -18,7 +18,7 @@ before_installed:
   - docker build -t 10001024/react-test -f ./client/Dockerfile.dev ./client
 
 script:
-  - docker run -e CI=true USERNAME/react-test npm test
+  - docker run -e CI=true 10001024/react-test npm test
 
 deploy:
   provider: script
